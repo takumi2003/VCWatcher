@@ -1,1 +1,3 @@
 # VCWatcher
+
+Discordで他の人が入ってきた時にテキストチャンネルに通知を送るbot
