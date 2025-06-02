@@ -29,12 +29,12 @@ client.on('voiceStateUpdate', (oldState, newState) => {
       if (memberCount >= 2) {
         const notifyChannel = newState.guild.channels.cache.get(NOTIFY_CHANNEL_ID);
         if (notifyChannel) {
-          notifyChannel.send(`${username} さんが「${vc.name}」に参加しました！（現在 ${memberCount} 人）`);
+          notifyChannel.send(`${username} さんが「${vc.name}」に参加しました！`);
         } else {
           console.log('notifyChannel not found!');
         }
       } else {
-        console.log(`${username} が VC に入ったが、まだ1人目なので通知なし`);
+        console.log(`${username} login(not notify)`);
       }
     }
   });
